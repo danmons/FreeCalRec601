@@ -1,0 +1,18 @@
+<subpictures format="NTSC">
+  <stream>
+    <spu 
+      force="yes" 
+      start="00:00:00.00"
+      image="ntsc-dvd/menu_buttons.png" 
+      select="ntsc-dvd/menu_buttons.png" 
+      highlight="ntsc-dvd/menu_buttons.png" 
+      autooutline="infer" 
+      outlinewidth="10"
+      autoorder="rows"
+      >
+      <button name="1" x0="260" y0="90" x1="460" y1="190"/>
+      <button name="2" x0="260" y0="190" x1="460" y1="290"/>
+      <button name="3" x0="260" y0="290" x1="460" y1="390"/>
+    </spu>
+  </stream>
+</subpictures>

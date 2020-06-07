@@ -1,0 +1,41 @@
+<dvdauthor dest="iso-pal-dvd/dvd_fs" >
+  <vmgm>
+    <menus>
+      <pgc>
+        <vob file="pal-dvd/menu_pal.vob" pause="inf"/>
+        <button name="1">{g1=button; jump title 1;}</button>
+        <button name="2">{g1=button; jump title 2;}</button>
+        <button name="3">{g1=button; jump title 3;}</button>
+        <button name="4">{g1=button; jump title 3;}</button>
+        <button name="5">{g1=button; jump title 3;}</button>
+        <button name="6">{g1=button; jump title 3;}</button>
+        <post> jump vmgm menu 1; </post>
+      </pgc>
+    </menus>
+  </vmgm>
+  <titleset>
+    <titles>
+      <pgc>
+        <vob file="pal-dvd/sequence_greyscale.vob" chapters="00:00:00,00:01:00,00:02:00,00:03:00,00:04:00,00:05:00,00:06:00,00:07:00,00:08:00,00:09:00,00:10:00" />
+        <post> call vmgm menu 1; </post>
+      </pgc>
+    </titles>
+  </titleset>
+  <titleset>
+    <titles>
+      <pgc>
+        <vob file="pal-dvd/sequence_colour.vob" chapters="00:00:00,00:01:00,00:02:00,00:03:00,00:04:00,00:05:00,00:06:00,00:07:00" />
+        <post> call vmgm menu 1; </post>
+      </pgc>
+    </titles>
+  </titleset>
+  <titleset>
+    <titles>
+      <pgc>
+        <vob file="pal-dvd/sequence_saturation.vob"
+          chapters="00:00:00,00:01:00,00:02:00,00:03:00,00:04:00,00:05:00,00:06:00,00:07:00,00:08:00,00:09:00,00:10:00,00:11:00,00:12:00,00:13:00,00:14:00,00:15:00,00:16:00,00:17:00,00:18:00,00:19:00,00:20:00,00:21:00,00:22:00,00:23:00,00:24:00,00:25:00,00:26:00,00:27:00,00:28:00,00:29:00,00:30:00,00:31:00" />
+        <post> call vmgm menu 1; </post>
+      </pgc>
+    </titles>
+  </titleset>
+</dvdauthor>

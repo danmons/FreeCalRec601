@@ -1,0 +1,18 @@
+<subpictures format="PAL">
+  <stream>
+    <spu 
+      force="yes" 
+      start="00:00:00.00"
+      image="pal-dvd/menu_buttons.png" 
+      select="pal-dvd/menu_buttons.png" 
+      highlight="pal-dvd/menu_buttons.png" 
+      autooutline="infer" 
+      outlinewidth="10"
+      autoorder="rows"
+      >
+      <button name="1" x0="260" y0="138" x1="460" y1="238"/>
+      <button name="2" x0="260" y0="238" x1="460" y1="338"/>
+      <button name="3" x0="260" y0="338" x1="460" y1="438"/>
+    </spu>
+  </stream>
+</subpictures>
