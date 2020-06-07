@@ -3,8 +3,6 @@
     <spu 
       force="yes" 
       start="00:00:00.00"
-      image="pal-dvd/menu_buttons.png" 
-      select="pal-dvd/menu_buttons.png" 
       highlight="pal-dvd/menu_buttons.png" 
       autooutline="infer" 
       outlinewidth="10"
