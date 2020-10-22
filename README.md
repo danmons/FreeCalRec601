@@ -12,8 +12,8 @@ These scripts aim to generate accurate test patterns on DVD for use with tools s
 * https://www.avsforum.com/forum/139-display-calibration/1393853-hcfr-open-source-projector-display-calibration-software.html
 
 These scripts come in two flavours currently:
-* BT.601-6-525 / bt470bg / PAL
-* BT.601-6-625 / smpte170m / NTSC
+* BT.601-6-625 / bt470bg / PAL
+* BT.601-6-525 / smpte170m / NTSC
 
 And output to a .iso file that should burn to a DVD-R (perhaps even a CD-R) and be used in any compatible DVD or similar MPEG2 player.
 
