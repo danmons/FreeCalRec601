@@ -232,7 +232,7 @@ do
     ${1}/chunk_black.tif ${1}/chunk_black.tif ${1}/chunk_black.tif ${1}/chunk_black.tif \
     ${1}/chunk_black.tif ${1}/chunk_${COLOUR}.tif ${1}/chunk_${COLOUR}.tif ${1}/chunk_black.tif \
     ${1}/chunk_black.tif ${1}/chunk_${COLOUR}.tif ${1}/chunk_${COLOUR}.tif ${1}/chunk_black.tif \
-    ${1}/chunk_black.tif ${1}/descl_${COLOUR}.tif ${1}/descr${COLOUR}.tif ${1}/chunk_black.tif \
+    ${1}/chunk_black.tif ${1}/descl_${COLOUR}.tif ${1}/descr_${COLOUR}.tif ${1}/chunk_black.tif \
     -tile 4x4 -geometry +0+0 ${1}/comp_${COLOUR}.tif
 done
 
