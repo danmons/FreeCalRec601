@@ -28,10 +28,12 @@ ntsc-dvd)
   ;;
 esac
 
+# ImageMagick colorspace "sRGB" for base RGB calculations of images
+# TIFF format preserves colorspace across compositing tasks
 I="convert -colorspace sRGB -type truecolor -depth 8"
 M="montage +set label -colorspace sRGB -type truecolor -depth 8"
-DL="${I} -gravity NorthEast -background black -fill gray -pointsize 30 -annotate +10+10"
-DR="${I} -gravity NorthWest -background black -fill gray -pointsize 30 -annotate +10+10"
+DL="${I} -gravity NorthEast -background black -fill gray -pointsize 30 -annotate +10+35"
+DR="${I} -gravity NorthWest -background black -fill gray -pointsize 30 -annotate +10+35"
 
 # Set our chunk sizes and final resolutions
 CXRES=$(( ${XRES}/4 ))
