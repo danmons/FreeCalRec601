@@ -51,7 +51,7 @@ do
   ffmpeg -nostdin -y -loop 1 -i "${FILE}" -target "${1}" -r ${RATE} -t 60 -aspect 4:3 \
   -vf "colorspace=bt709:iall=${CSPACE},tinterlace=interleave_top,fieldorder=tff" \
   -colorspace ${CMATRIX} -color_primaries ${CMATRIX} -color_trc ${CTRC} -flags +ildct+ilme -video_format ${VF} \
-  -an -c:v mpeg2video -b:v 6M -minrate:v 1M -maxrate:v 10M -bufsize:v 5M -refs 1 \
+  -an -c:v mpeg2video -b:v 8M -minrate:v 5M -maxrate:v 10M -bufsize:v 5M -refs 1 \
   -use_wallclock_as_timestamps 1 \
   "${1}/video_${COLOUR}.vob"
 
@@ -128,7 +128,7 @@ sox -n -r 44000 -c 2 ${1}/silence.wav trim 0.0 30.0
 ffmpeg -nostdin -y -loop 1 -i ${1}/menu_comp_large.tif -target "${1}" -r ${RATE} -t 60 -aspect 4:3 \
   -vf "colorspace=bt709:iall=${CSPACE},tinterlace=interleave_top,fieldorder=tff" \
   -colorspace ${CMATRIX} -color_primaries ${CMATRIX} -color_trc ${CTRC} -flags +ildct+ilme -video_format ${VF} \
-  -an -c:v mpeg2video -b:v 6M -minrate:v 1M -maxrate:v 10M -bufsize:v 5M -refs 1 \
+  -an -c:v mpeg2video -b:v 8M -minrate:v 5M -maxrate:v 10M -bufsize:v 5M -refs 1 \
   -use_wallclock_as_timestamps 1 \
   "${1}/dvd_menu_nosound.vob"
 
