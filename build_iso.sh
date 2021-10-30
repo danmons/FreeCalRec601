@@ -38,9 +38,11 @@ ntsc-dvd)
   ;;
 esac
 
+DATESTAMP=$(cat datestamp.txt)
+
 mkdir iso-${1} >/dev/null 2>&1
 rm -rf iso-${1}/*
-rm FreeCalRec601_${REGION}.iso
+rm FreeCalRec601_${REGION}_${DATESTAMP}.iso
 
 TODAY=$(date +%F)
 
@@ -54,5 +56,5 @@ dvdauthor -x dvd_${LREGION}.xml
 
 ## Build the DVD iso
 echo "Calling mkisofs..."
-mkisofs -V "FreeCalRec601${REGION}_${TODAY}" -dvd-video -udf -o FreeCalRec601_${REGION}.iso iso-${1}/dvd_fs/
+mkisofs -V "FreeCalRec601${REGION}_${TODAY}" -dvd-video -udf -o FreeCalRec601_${REGION}_${DATESTAMP}.iso iso-${1}/dvd_fs/
 
