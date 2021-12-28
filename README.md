@@ -1,6 +1,6 @@
 # FreeCalRec601
 
-[About](#about) | [Download](#download) | [Building](#building) | [Instructions](#instructions)
+[About](#about) | [Download](#download) | [Instructions](#instructions) | [Building](#building)
 
 ## About
 
@@ -43,6 +43,24 @@ These differ in a few ways
 
 In each case, the ffmpeg scripts used to generate the DVD VOB files have specific instructions to convert the RGB primaries to the correct broadcast standard. 
 
+## Instructions
+
+Instructional video here (click to watch on YouTube):
+
+[![Watch the video](https://img.youtube.com/vi/G27RqZtcnj8/hqdefault.jpg)](https://youtu.be/G27RqZtcnj8)
+
+
+My existing CRT Colour Calibration series on YouTube demonstrates how to use a colorimeter with HCFR.  You can see the vidoes here:
+* [Stickfreaks Colour Calibration Videos](https://www.youtube.com/watch?v=3o3awkkAILI&list=PLyXPSTsxUZq5zgE_5ZHi2cdfE2--66DjZ)
+
+These ISO images can be burned to DVD-R media, and used in any standard DVD player or console that supports DVD playback (PlayStation 2, Playstation 3, etc).
+
+Alternatively the ISO image can be played directly by VLC (a Raspberry Pi will work fine) or on a modded OG Xbox, PlayStation 3, etc.
+
+Get a signal out of your playback device to your CRT via whatever method you want to calibrate. Composite video, S-Video, RGB/SCART, YPbPr, whatever. Play the DVD and navigate the menus with your remote.
+
+See the instructional videos linked above on how to use HCFR with a colorimeter, and you can use these DVDs as test pattern generators.
+
 ## Building
 
 These are tested and built on an Linux system with free tools installed, specifically Ubuntu 20.04 LTS. Other distros and versions should work fine, assuming you install the following tools:
@@ -58,19 +76,3 @@ sudo apt install imagemagick ffmpeg sox genisoimage dvdauthor
 ```
 
 The tools don't require any special hardware features, and should run fine in something like Windows with WSL.
-
-## Instructions
-
-I'll attempt to flesh out these instructions more thoroughly in the future, along with an instructional video.
-
-My existing CRT Colour Calibration series on YouTube demonstrates how to use a colorimeter with HCFR.  You can see the vidoes here:
-* [Stickfreaks Colour Calibration Videos](https://www.youtube.com/watch?v=3o3awkkAILI&list=PLyXPSTsxUZq5zgE_5ZHi2cdfE2--66DjZ)
-
-These ISO images can be burned to DVD-R media, and used in any standard DVD player or console that supports DVD playback (PlayStation 2, Playstation 3, etc).
-
-Alternatively the ISO image can be played directly by VLC (a Raspberry Pi will work fine) or on a modded OG Xbox, PlayStation 3, etc.
-
-Get a signal out of your playback device to your CRT via whatever method you want to calibrate. Composite video, S-Video, RGB/SCART, YPbPr, whatever. Play the DVD and navigate the menus with your remote.
-
-See the instructional videos linked above on how to use HCFR with a colorimeter, and you can use these DVDs as test pattern generators.
-
