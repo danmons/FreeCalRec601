@@ -75,4 +75,4 @@ On Ubuntu 20.04, simply run
 sudo apt install imagemagick ffmpeg sox genisoimage dvdauthor 
 ```
 
-The tools don't require any special hardware features, and should run fine in something like Windows with WSL.
+The tools don't require any special hardware or kernel features, and should run fine in something like Windows 10 and 11 with WSL and Ubuntu from the Microsoft Store.
