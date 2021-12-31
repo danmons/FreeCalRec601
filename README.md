@@ -20,7 +20,7 @@ These scripts come in two flavours currently:
 * BT.601-6-625 / bt470bg / PAL
 * BT.601-6-525 / smpte170m / NTSC
 
-And output to an ISO image file that should burn to a DVD-R and be used in any standard DVD or similar MPEG2 player. 
+And output to an ISO image file that should burn to a DVD-R and be used in any standard DVD or similar MPEG2 player, including a standard unmodded PlayStation 2. 
 
 The ISO file can also be played directly via tools such as VLC or on a modded OG XBox or PlayStation 3 without needing to burn them to a physical disc, useful for testing. 
 
