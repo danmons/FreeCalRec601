@@ -50,8 +50,10 @@ Instructional video here (click to watch on YouTube):
 [![Watch the video](https://img.youtube.com/vi/G27RqZtcnj8/hqdefault.jpg)](https://youtu.be/G27RqZtcnj8)
 
 
-My existing CRT Colour Calibration series on YouTube demonstrates how to use a colorimeter with HCFR.  You can see the vidoes here:
-* [Stickfreaks Colour Calibration Videos](https://www.youtube.com/watch?v=3o3awkkAILI&list=PLyXPSTsxUZq5zgE_5ZHi2cdfE2--66DjZ)
+My existing CRT Colour Calibration series on YouTube demonstrates how to use a colorimeter with HCFR.  You can watch the entire playlist here (click to watch on YouTube):
+
+[![Watch the video](https://img.youtube.com/vi/695fk63FYFk/hqdefault.jpg)](https://www.youtube.com/watch?v=3o3awkkAILI&list=PLyXPSTsxUZq5zgE_5ZHi2cdfE2--66DjZ)
+
 
 These ISO images can be burned to DVD-R media, and used in any standard DVD player or console that supports DVD playback (PlayStation 2, Playstation 3, etc).
 
