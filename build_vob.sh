@@ -49,7 +49,7 @@ do
   # Input images are sRGB - same white/chromacity co-ordinates as Rec.709
   # We'll convert the inputs images to the Rec.601 colourspace we want, including PAL or NTSC variances
   ffmpeg -nostdin -y -loop 1 -i "${FILE}" -target "${1}" -r ${RATE} -t 60 -aspect 4:3 \
-  -vf "colorspace=bt709:iall=${CSPACE},tinterlace=interleave_top,fieldorder=tff" \
+  -vf "colorspace=${CSPACE}:iall=bt709,tinterlace=interleave_top,fieldorder=tff" \
   -colorspace ${CMATRIX} -color_primaries ${CMATRIX} -color_trc ${CTRC} -flags +ildct+ilme -video_format ${VF} \
   -an -c:v mpeg2video -b:v 8M -minrate:v 5M -maxrate:v 10M -bufsize:v 5M -refs 1 \
   -use_wallclock_as_timestamps 1 \
@@ -66,7 +66,7 @@ done
 # -t - time length for the video loop to run
 # -aspect - force viewing aspect ratio to 4:3
 # -vf - video filters.  These consist of:
-## colorspace=bt709:iall=bt601-6-625 - mathematically converts the colour primaries, white point and gamma from
+## colorspace=bt601-6-625:iall=bt709 - mathematically converts the colour primaries, white point and gamma from
 ## bt709 (identical to sRGB) to bt601 for 525 (NTSC) or 625 (PAL) modes.
 ## tinterlace=interleave_top,fieldorder=tff - force the video to be interlaced, and play the top field first
 # -colorspace -color_primaries -color_trc - these appear to only set metadata tags, not do actual colorspace conversion
