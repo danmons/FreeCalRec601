@@ -77,4 +77,9 @@ On Ubuntu 20.04, simply run
 sudo apt install imagemagick ffmpeg sox genisoimage dvdauthor 
 ```
 
+On Arch Linux, run:
+```
+sudo pacman -Sy imagemagick ffmpeg sox cdrkit dvdauthor
+```
+
 The tools don't require any special hardware or kernel features, and should run fine in something like Windows 10 and 11 with WSL and Ubuntu from the Microsoft Store.
