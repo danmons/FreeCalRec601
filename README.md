@@ -28,7 +28,7 @@ These us open source image generation tools such as ffmpeg, dvauthor and ImageMa
 
 ## Download
 
-Current binary builds can be downloaded from here:
+Current ISO images, built from this code, ready for playback or burning to DVD-R, can be downloaded from here:
 * [https://stickfreaks.com/freecalrec601](https://stickfreaks.com/freecalrec601)
 
 These are compressed with 7-Zip, so decompress prior to burning/playing.
