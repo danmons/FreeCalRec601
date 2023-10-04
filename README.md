@@ -8,7 +8,7 @@ Rec.601/BT.601 calibration DVD and test pattern generator
 * https://en.wikipedia.org/wiki/Rec._601
 
 There exist excellent free calibration discs for Rec.709/HD systems, notably AVS HD 709:
-* https://www.avsforum.com/forum/139-display-calibration/948496-avs-hd-709-blu-ray-mp4-calibration.html
+* https://www.avsforum.com/threads/avs-hd-709-blu-ray-mp4-calibration.948496/
 
 Sadly nothing similar exists for retro enthusiasts wanting to calibrate their SD displays to era-accurate standards.
 
