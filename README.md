@@ -14,7 +14,7 @@ Sadly nothing similar exists for retro enthusiasts wanting to calibrate their SD
 
 These scripts aim to generate accurate test patterns on DVD for use with tools such as HCFR:
 * http://hcfr.sf.net
-* https://www.avsforum.com/forum/139-display-calibration/1393853-hcfr-open-source-projector-display-calibration-software.html
+* https://www.avsforum.com/threads/hcfr-open-source-projector-and-display-calibration-software.1393853/
 
 These scripts come in two flavours currently:
 * BT.601-6-625 / bt470bg / PAL
@@ -29,7 +29,7 @@ These us open source image generation tools such as ffmpeg, dvauthor and ImageMa
 ## Download
 
 Current ISO images, built from this code, ready for playback or burning to DVD-R, can be downloaded from here:
-* [https://stickfreaks.com/freecalrec601](https://stickfreaks.com/freecalrec601)
+* https://stickfreaks.com/freecalrec601
 
 These are compressed with 7-Zip, so decompress prior to burning/playing.
 
