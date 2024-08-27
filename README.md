@@ -1,16 +1,15 @@
 # FreeCalRec601
 
-[About](#about) | [Download](#download) | [Instructions](#instructions) | [Building](#building)
+[About](#about) | [Download](#download) | [Alternatives](#alternatives) | [Instructions](#instructions) | [Building](#building)
 
 ## About
 
-Rec.601/BT.601 calibration DVD and test pattern generator
-* https://en.wikipedia.org/wiki/Rec._601
+FreeCalRec601 is a free [Rec.601/BT.601](https://en.wikipedia.org/wiki/Rec._601) calibration DVD and test pattern generator.  It can be used on any device that 
+plays standard NTSC or PAL DVD media, including DVD and Blu-Ray players, video game consoles like the PlayStation 2 and PlayStation 3, etc. 
 
-There exist excellent free calibration discs for Rec.709/HD systems, notably AVS HD 709:
-* https://www.avsforum.com/threads/avs-hd-709-blu-ray-mp4-calibration.948496/
-
-Sadly nothing similar exists for retro enthusiasts wanting to calibrate their SD displays to era-accurate standards.
+There exist excellent free calibration discs for Rec.709/HD (High Definition) systems, notably [AVS HD 709](https://www.avsforum.com/threads/avs-hd-709-blu-ray-mp4-calibration.948496/). Sadly nothing similar 
+existed for retro enthusiasts wanting to calibrate their SD (Standard Definition) displays to era-accurate standards, which was the motivation for this project.  Its aimed at anyone who wants to ensure their 
+older style standard definition display meets specification, from retro gamers to home theatre enthusiasts who may still be using old VHS and DVD playback equipment on CRTs. 
 
 These scripts aim to generate accurate test patterns on DVD for use with tools such as HCFR:
 * http://hcfr.sf.net
@@ -24,24 +23,31 @@ And output to an ISO image file that should burn to a DVD-R and be used in any s
 
 The ISO file can also be played directly via tools such as VLC or on a modded OG XBox or PlayStation 3 without needing to burn them to a physical disc, useful for testing. 
 
-These us open source image generation tools such as ffmpeg, dvauthor and ImageMagick to generate and assemble all the images and videos required.
+These use open source and 100% free (libre and gratis) image generation tools such as ffmpeg, dvauthor and ImageMagick to generate and assemble all the images and videos required. Everything in this repository can be re-created for free, and used for free without restriction, fees or licensing. 
 
 ## Download
 
-Current ISO images, built from this code, ready for playback or burning to DVD-R, can be downloaded from here:
+Pre-built ISO images, built from this code, ready for playback or burning to DVD-R, can be downloaded from here:
 * https://stickfreaks.com/freecalrec601
 
 These are compressed with 7-Zip, so decompress prior to burning/playing.
 
 Match the PAL or NTSC image to whatever it is you want to calibrate.
-* NTSC is 480 lines interlaced (480i)
-* PAL is 576 lines interlaced (576i)
+* NTSC is 480 lines interlaced (aka 480i aka 525-line including blanking), and 29.97Hz frames (59.94Hz fields)
+* PAL is 576 lines interlaced (aka 576i aka 625-line including blanking), and 25.00Hz frames (50.00Hz fields)
 
-These differ in a few ways
-* Line count / "resolution" (obviously)
-* Colour space - these standards have slightly different colour primaries due to changes in line density and other encoding specifics.
+These differ in two specific ways:
+* Line count / resolution / framerate
+* Colour space - these standards have slightly different colour primaries due to changes in line density and other encoding specifics, as per the two variations of the Rec.601 standard.
 
-In each case, the ffmpeg scripts used to generate the DVD VOB files have specific instructions to convert the RGB primaries to the correct broadcast standard. 
+There is no region-locking on the generated DVDs, so you can play PAL on NTSC or vice versa.  But this will produce incorrect colour output.  Ensure you match the DVD to the region of your player and display. 
+
+In each case, the ffmpeg scripts used to generate the DVD VOB files have specific instructions to convert the RGB primaries to the correct broadcast standard. See the notes below as to why these may look different if played back on a desktop PC. 
+
+## Alternatives
+
+Since making this project, some good alternatives have been made available.  I've worked with Artemio and Keith Raney to get these test patterns into certain versions of the [240p Test Suite](https://junkerhq.net/xrgb/index.php?title=240p_test_suite).  At time 
+of writing, the Dreamcast and Gamecube versions have these same test patterns on them, and you can use those consoles running the 240p Test Suite as a test pattern generator for CRTs in a similar way to these DVDs. 
 
 ## Instructions
 
@@ -62,6 +68,10 @@ Alternatively the ISO image can be played directly by VLC (a Raspberry Pi will w
 Get a signal out of your playback device to your CRT via whatever method you want to calibrate. Composite video, S-Video, RGB/SCART, YPbPr, whatever. Play the DVD and navigate the menus with your remote.
 
 See the instructional videos linked above on how to use HCFR with a colorimeter, and you can use these DVDs as test pattern generators.
+
+Note that playing these DVDs/ISOs or the VOB files within on a desktop PC via a video player like VLC may produce slightly different colours to what you expect.  This is a result of the player not correctly converting the specific Rec.601 primary chromaticities back to what your monitor is configured to (typically sRGB).  Many desktop video players are quite lazy in their colourspace conversions (i.e.: they don't bother at all).  These DVDs are designed specifically for Rec.601 standard output devices, which themselves generally assume the connected display is a standard definition CRT television.  If you want to inspect the colours with a vectorscope (using something like DaVinci Resolve), you'll need to ensure you are setting the correct colourspace for your project (many of these sorts of tools don't ship with Rec.601 colourspace definitions any more either). 
+
+If you want to calibrate sRGB (most PC monitors) or Rec.709 (most HD TVs, or 4K TVs running in SDR mode) displays instead, see the AVS HD 709 links in the "About" section above, or simply use HCFR from a PC or laptop connected directly to your display device. 
 
 ## Building
 
